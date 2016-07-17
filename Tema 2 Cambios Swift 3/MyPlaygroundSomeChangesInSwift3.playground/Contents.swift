@@ -56,7 +56,48 @@ for var i = 0; i <10; i++ {
  }
  
  
- 
  */
+
+
+//Cambios en funciones
+
+//tenemos la siguiente función
+
+
+func addTwoNumbers(x:Int, y:Int) -> Int {
+
+
+    return x+y
+    
+
+}
+
+
+addTwoNumbers(x: 4, y: 6)
+
+// el cambio se nota aqui addTwoNumbers(x: 4, y: 6), antes al primer parametros no se indicaba el parametros, salia asi, addTwoNumbers(4, y: 6), el nombre del primer parametro no salia, en Siwft 3 es obligatorio, y ya cuando llama la función sale automaticamente.
+
+
+
+
+
+//Los colores han sufrido cambios
+
+
+//antes
+
+let red = UIColor.blackColor()
+
+// Ahora Swift 3
+
+let red1 = UIColor.red()
+
+
+
+
+
+
+
+
 
 
