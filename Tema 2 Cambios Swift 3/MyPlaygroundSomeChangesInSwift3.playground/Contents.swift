@@ -2,6 +2,8 @@
 
 import UIKit
 
+import Foundation
+
 
 // Hay que mirar y entender bien el concepto ABI Stabilización.
 
@@ -93,10 +95,27 @@ let red = UIColor.blackColor()
 let red1 = UIColor.red()
 
 
+//Nuevo Color Literal en Swift 3, para los colores será lo más sencillo que tiene Swift 3
+let newColor = #colorLiteral(red: 1, green: 0.400000006, blue: 0.400000006, alpha: 1)
 
 
+//En Swift 3 Apple empieza a cargarse el prefijo NS : Next Step
 
+//La mayoria de las clases en Swift 3 ya no tendrán NS
 
+//Ejemplo
+
+//Antes
+let date1: NSDate = NSDate()
+
+//Ahor Swift 3
+let date: Date = Date()
+
+//Antes
+let dateFormatter: NsDateFormatter
+
+//Ahor Swift 3
+let dateFormatter1: DateFormatter
 
 
 
