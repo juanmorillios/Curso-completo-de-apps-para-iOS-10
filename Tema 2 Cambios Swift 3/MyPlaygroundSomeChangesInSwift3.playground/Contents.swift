@@ -15,6 +15,7 @@ var age = 39
 
 age += 1 // Cambio en Swift 3
 
+//Larga vida al ++ y --
 
 age++ // Versión anterior aqui el compilador se queja y propone a solucionar el error  por +=
 
