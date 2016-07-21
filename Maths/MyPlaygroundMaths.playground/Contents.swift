@@ -97,9 +97,72 @@ costeGymMes += 5
 costeGymMes -= 5
 
 
+var isWoman = true
+
+let age = 39
+
+if isWoman == true && age >= 35 {
+
+    print("Is a Woman y su edad es \(age)")
+
+
+} else if isWoman == false && age <= 40 {
+
+    print("Not is a Woman, is a Man")
+
+}
 
 
 
+
+let isPayDay : Bool = true
+
+var wallet2 = 30
+
+if isPayDay {
+
+
+    wallet2 += 300
+
+    wallet2 += 250
+    
+    
+}
+
+
+wallet2
+
+
+var opt : Bool = true
+
+if opt {
+    
+    let sum = 2 + 2
+
+} else if opt == false {
+
+
+    print("La operación no cumple")
+    
+
+}
+
+
+
+let operando1 : Double = 10.5
+
+let operando2 : Double = 2.0
+
+if operando1 >= operando2 {
+
+    print("operando1 es mayor que operando2")
+    
+    } else if operando2 == operando1 {
+    
+    print("Operando2 es igual a operando1")
+    
+
+}
 
 
 
