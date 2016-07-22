@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let milesUnit = 1.60934
+    let milesUnit = 1.609
    
     
     @IBOutlet weak var valueToConverter: UITextField!
@@ -33,47 +33,52 @@ class ViewController: UIViewController {
         
        let selectdIndex = segmentedControl.selectedSegmentIndex
         
-   
         //Creamos una variable para guardar el contenido del textField y al mismo tiempo lo convertimos en tipo de datos Doble.
         let valueTextField = Double(valueToConverter.text!)!
         
             if selectdIndex == 0 {
         
         let  convertedValue =  valueTextField / milesUnit
-         
-         //Creamos dos constantes para hacer la conversión o parseo de los datos y presentar los números solo con 2 decimales.
-            
-         let initValue = String(format: "%.2f", valueTextField)
-         let endValue = String(format: "%.2f", convertedValue)
-         
-            //Sale por consola.
-            print("Conversión a millas \(convertedValue)")
-            
         
-            //Sacamos el resultado por pantalla.
-            lblResultado.text =  "\(initValue) km = \(endValue) millas"
+        reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+                
             
         } else  if selectdIndex == 1 {
         
             let convertedValue = valueTextField * milesUnit
             
-            //Creamos dos constantes para hacer la conversión o parseo de los datos y presentar los números solo con 2 decimales.
-                
-            let initValue = String(format: "%.2f", valueTextField)
-            let endValue = String(format: "%.2f", convertedValue)
-            
-            //Sale por consola.
-            print("Conversión a millas \(convertedValue)")
-
-            
-            //Sacamos el resultado por pantalla.
-            lblResultado.text =  "\(initValue) millas = \(endValue) kms."
-        
+           reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
                 
         }
         
+    }
+
+    func reloadView(valueTextField: Double, convertedValue: Double) {
+    
+    //Creamos dos constantes para hacer la conversión o parseo de los datos y presentar los números solo con 2 decimales.
+    
+    
+    let initValue = String(format: "%.2f", valueTextField)
+    let endValue = String(format: "%.2f", convertedValue)
+    //Sacamos el resultado por pantalla.
+        if segmentedControl.selectedSegmentIndex == 0 {
+    lblResultado.text =  "\(initValue) km = \(endValue) millas"
         
+        } else {
+        
+        lblResultado.text =  "\(initValue) millas = \(endValue) km"
+            
+        
+        }
+    
+    }
+
+    //Ocultamos la barra de estado de la app.
+   override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 
 }
+
+
 
