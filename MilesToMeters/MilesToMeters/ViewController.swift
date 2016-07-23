@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     let milesUnit = 1.609
+    let llegadaUnit = 10.5
+    let yardUnit = 1760.0
    
     
     @IBOutlet weak var valueToConverter: UITextField!
@@ -18,20 +20,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
 
     @IBOutlet weak var lblResultado: UILabel!
+    
+    @IBOutlet weak var segmentControl2: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         lblResultado.text = "Por favor introduce un valor a convertir"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func converterBtnPressed(_ sender: UIButton) {
         
-       let selectdIndex = segmentedControl.selectedSegmentIndex
+        let selectdIndex = segmentedControl.selectedSegmentIndex
+        let selectdIndex2 = segmentControl2.selectedSegmentIndex
         
         //Creamos una variable para guardar el contenido del textField y al mismo tiempo lo convertimos en tipo de datos Doble.
         let valueTextField = Double(valueToConverter.text!)!
@@ -49,8 +50,27 @@ class ViewController: UIViewController {
             
            reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
                 
-        }
+            } else if selectdIndex == 2 {
         
+                let convertedValue = valueTextField * yardUnit
+        
+                reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+            
+           
+            } else if selectdIndex2 == 0 {
+        
+                let finalUnit = valueTextField * llegadaUnit
+                
+                converFrom(fromUnit: valueTextField, toUnit: finalUnit)
+        
+            } else {
+        
+        
+                let finalUnit = valueTextField / llegadaUnit
+                
+                converFrom(fromUnit: valueTextField, toUnit: finalUnit)
+        
+        }
     }
 
     func reloadView(valueTextField: Double, convertedValue: Double) {
@@ -60,16 +80,23 @@ class ViewController: UIViewController {
     
     let initValue = String(format: "%.2f", valueTextField)
     let endValue = String(format: "%.2f", convertedValue)
+    
     //Sacamos el resultado por pantalla.
-        if segmentedControl.selectedSegmentIndex == 0 {
-    lblResultado.text =  "\(initValue) km = \(endValue) millas"
+    if segmentedControl.selectedSegmentIndex == 0 {
+    lblResultado.text =  "\(initValue) km = \(endValue) Millas."
         
-        } else {
+        } else if segmentedControl.selectedSegmentIndex == 1  {
         
-        lblResultado.text =  "\(initValue) millas = \(endValue) km"
+        lblResultado.text =  "\(initValue) milla = \(endValue) Kms."
             
         
-        }
+    } else if segmentedControl.selectedSegmentIndex == 2 {
+        
+        
+        lblResultado.text =  "\(initValue) milla = \(endValue) Yardas."
+
+        
+    }
     
     }
 
@@ -77,6 +104,30 @@ class ViewController: UIViewController {
    override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+
+    func converFrom(fromUnit: Double, toUnit: Double) {
+        
+        let firstUnit = String(format: "%.2f", fromUnit)
+        let secondUnit = String(format: "%.2f", toUnit)
+        
+        if segmentControl2.selectedSegmentIndex == 0 {
+        
+        
+            lblResultado.text = "\(firstUnit) unidad = \(secondUnit)"
+        
+        } else if segmentControl2.selectedSegmentIndex == 1 {
+        
+        
+            lblResultado.text = "\(firstUnit) unidad = \(secondUnit)"
+        
+            
+        }
+        
+        
+        
+    }
+    
 
 }
 
