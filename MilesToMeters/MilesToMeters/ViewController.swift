@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     if segmentedControl.selectedSegmentIndex == 0 {
     lblResultado.text =  "\(initValue) km = \(endValue) Millas."
         
-        } else if segmentedControl.selectedSegmentIndex == 1  {
+    } else if segmentedControl.selectedSegmentIndex == 1  {
         
         lblResultado.text =  "\(initValue) milla = \(endValue) Kms."
             
