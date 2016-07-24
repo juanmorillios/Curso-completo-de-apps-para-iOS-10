@@ -34,5 +34,13 @@ walletJuan -= 100
 walletJuan -= 25
 
 
+//Crea un comentario multi línea y escribe en él tu chiste favorito.
 
+/*  
+ 
+ —Mamá, mamá ¿crees que soy feo?
+ —Ya te dije que en la calle no me digas mamá.
+ 
+ 
+ */
 
