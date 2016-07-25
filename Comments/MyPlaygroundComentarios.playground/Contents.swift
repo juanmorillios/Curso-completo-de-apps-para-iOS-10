@@ -44,3 +44,35 @@ walletJuan -= 25
  
  */
 
+
+
+// TODO: hay que proceder a verificar cual es la edad de la mujer.
+
+/* Ejercicios de imprimir por consola
+Sección 9, Clase 88
+Imprime un Double, un Boolean y un String por consola.   */
+
+var num: Double = 23.5
+
+var isOlder : Bool = true
+
+let nameDog : String = "Duke"
+
+if isOlder {
+
+    print("Is older")
+
+}
+
+
+print("\(num)", "\(isOlder)", "\(nameDog)", separator: "-", terminator: ".")
+
+
+ 
+
+
+
+
+
+
+
