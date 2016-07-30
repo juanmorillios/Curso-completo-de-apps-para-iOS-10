@@ -114,9 +114,85 @@ numberInteger
 
 
 
+//Metodos Insert and Remove
+
+
+/* Insertad las "Zanahorias" en la posición número 3 del array, para que esté delante del brócoli del ejercicio anterior.
+ */
+
+
+favoriteFoods.insert("Zanahorias", at: 3)
+favoriteFoods
 
 
 
+/* Eliminad el número en la posición número 2 del array de teléfonos, el que habíamos puesto anteriormente.  */
+
+numberInteger.remove(at: 1)
+numberInteger
+
+
+
+
+//Para crear filtro sobre un Array
+
+shopingList.contains("Pimientos")
+
+//Si sabemos que el array esta en el array, miramos la pocisón
+
+shopingList.index(of:"Pimientos")
+
+//Borramos el elemento de la lista
+shopingList.remove(at: 3)
+
+
+if shopingList.contains("Pimientos") {
+
+    let index = shopingList.index(of: "Pimientos")
+    shopingList.remove(at: index!)
+
+}
+
+print(shopingList)
+
+
+
+
+//Consulta la existencia de "Zanahorias" dentro del array de comidas favoritas anterior.
+favoriteFoods.contains("Zanahorias")
+
+//Extrae la posición de las "Zanahorias" en caso de que exista esta en tus comidas favoritas.
+favoriteFoods.index(of: "Zanahorias")
+
+
+if favoriteFoods.contains("Zanahorias"){
+
+
+    let index = favoriteFoods.index(of: "Zanahorias")
+    
+    print("Existe Zanahorias en la lista de comida favoritas, y esta en la posición #\(index!)")
+
+}
+
+
+
+
+
+//Añadir elementos individual al array
+shopingList.append("Chuletas")
+shopingList.append("Huevos")
+shopingList.append("Salmón")
+
+
+//Añadir elementos varios sumando un array
+
+shopingList += ["Vino","Beer","Ajo"]
+
+print(shopingList)
+
+//Consulta dentro de un array 
+
+shopingList[2...4]
 
 
 
