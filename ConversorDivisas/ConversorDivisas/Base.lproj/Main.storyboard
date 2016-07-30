@@ -76,10 +76,20 @@
                                 <state key="normal" title="Convertir">
                                     <color key="titleColor" red="0.14901960784313725" green="0.3843137254901961" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="convertirButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw2-Ng-rMW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="enterUnitToConverterTextField" destination="9Y6-3E-xTo" id="tJn-RF-AzP"/>
+                        <outlet property="resultadoLbl" destination="auT-Kt-cp5" id="Pjw-jg-Ed7"/>
+                        <outlet property="segmentedController1" destination="b1J-Ql-quk" id="7Xb-pd-A1T"/>
+                        <outlet property="segmentedController2" destination="aZH-4c-s50" id="hwz-R4-3Ty"/>
+                        <outlet property="segmentedController3" destination="dUK-oL-pzd" id="h6U-Mi-MJv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

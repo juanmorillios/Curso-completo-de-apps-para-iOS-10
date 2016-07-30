@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let milesUnit = 1.609
     let llegadaUnit = 10.5
     let yardUnit = 1760.0
+    
    
     
     @IBOutlet weak var valueToConverter: UITextField!
@@ -27,6 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         lblResultado.text = "Por favor introduce un valor a convertir"
+        
+    
     }
 
     @IBAction func converterBtnPressed(_ sender: UIButton) {
@@ -59,16 +62,17 @@ class ViewController: UIViewController {
            
             } else if selectdIndex2 == 0 {
         
-                let finalUnit = valueTextField * llegadaUnit
+                let convertedValue = valueTextField * llegadaUnit
                 
-                converFrom(fromUnit: valueTextField, toUnit: finalUnit)
+                reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+
         
             } else {
         
         
-                let finalUnit = valueTextField / llegadaUnit
+                let convertedValue = valueTextField / llegadaUnit
                 
-                converFrom(fromUnit: valueTextField, toUnit: finalUnit)
+                reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
         
         }
     }
