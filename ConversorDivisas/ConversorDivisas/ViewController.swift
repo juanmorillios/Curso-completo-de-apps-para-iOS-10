@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var segmentedController2: UISegmentedControl!
 
-    @IBOutlet weak var segmentedController3: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +49,9 @@ class ViewController: UIViewController {
    
     func converter() {
     
+     
+        if segmentedController1.tag == 0 {
+        
         let segmendIndex1 = segmentedController1.selectedSegmentIndex
         let textFieldVal = Double(enterUnitToConverterTextField.text!)!
         
@@ -56,9 +59,7 @@ class ViewController: UIViewController {
         let segmendIndex2 = segmentedController2.selectedSegmentIndex
         let textFieldVal2 = Double(enterUnitToConverterTextField.text!)!
         
-        
-        let segmendIndex3 = segmentedController3.selectedSegmentIndex
-        let textFieldVal3 = Double(enterUnitToConverterTextField.text!)!
+      
         
         
         if segmendIndex1 == 0 {
@@ -76,15 +77,21 @@ class ViewController: UIViewController {
         } else if segmendIndex1 == 1 {
             
             let convertedValue = textFieldVal * unitEuros
-            
             let initValue = String(format: "%.2f", textFieldVal)
             let endValue = String(format: "%.2f", convertedValue)
             
             resultadoLbl.text = "\(initValue) USD = \(endValue) EUR "
             
+       
+        } else if segmendIndex1 == 2 {
         
+            let convertedValue = textFieldVal * unitBitcoin
+            let initValue = String(format: "%.2f", textFieldVal)
+            let endValue = String(format: "%.2f", convertedValue)
             
-        } else if segmendIndex2 == 0 {
+            resultadoLbl.text = "\(initValue) XBT = \(endValue)BRL"
+            
+            } else if segmentedController2.tag == 1 {
             
             
             let convertedValue = textFieldVal2 * unitLibras
@@ -104,31 +111,19 @@ class ViewController: UIViewController {
             resultadoLbl.text = "\(initValue) GBP = \(endValue)DOP"
         
 
-        } else if segmendIndex3 == 0 {
+        } else if segmendIndex2 == 2 {
         
-            let convertedValue = textFieldVal3 * unitBitcoin
-            let initValue = String(format: "%.2f", textFieldVal3)
-            let endValue = String(format: "%.2f", convertedValue)
-            
-            resultadoLbl.text = "\(initValue) BRL = \(endValue)XBT"
-
-            
-        } else {
-        
-        
-            let convertedValue = textFieldVal3 * unitReales
-            let initValue = String(format: "%.2f", textFieldVal3)
+            let convertedValue = textFieldVal2 * unitReales
+            let initValue = String(format: "%.2f", textFieldVal2)
             let endValue = String(format: "%.2f", convertedValue)
             
             resultadoLbl.text = "\(initValue) xbt = \(endValue)BRL"
+
             
-        
         }
         
         
         
-        
-        
     }
     
     
@@ -140,3 +135,4 @@ class ViewController: UIViewController {
 
 
 
+}

@@ -26,28 +26,11 @@
                                 <frame key="frameInset" minX="16" minY="81" width="288" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Euros a Dolar"/>
-                                    <segment title="Dolar a Euros"/>
-                                </segments>
-                                <color key="tintColor" red="0.14901960784313725" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aZH-4c-s50">
-                                <frame key="frameInset" minX="16" minY="123" width="288" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Pesos a Libras"/>
-                                    <segment title="Libras a Pesos"/>
-                                </segments>
-                                <color key="tintColor" red="0.065065464070485024" green="0.25334535256410251" blue="0.0015142728785888029" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dUK-oL-pzd">
-                                <frame key="frameInset" minX="16" minY="167" width="288" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Reales a Bitcoin"/>
+                                    <segment title="EUR-USD"/>
+                                    <segment title="USD-EUR"/>
                                     <segment title="Bitcoin a Reales"/>
                                 </segments>
-                                <color key="tintColor" red="0.14809209105833834" green="0.25334535256410251" blue="0.035241129922197453" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.14901960784313725" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9Y6-3E-xTo">
                                 <frame key="frameInset" minX="16" minY="226" width="288" height="30"/>
@@ -80,15 +63,24 @@
                                     <action selector="convertirButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw2-Ng-rMW"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aZH-4c-s50">
+                                <frame key="frameInset" minX="15" minY="137" width="288" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Pesos a Libras"/>
+                                    <segment title="Libras a Pesos"/>
+                                    <segment title="Reales a Bitcoin"/>
+                                </segments>
+                                <color key="tintColor" red="0.065065464070485024" green="0.25334535256410251" blue="0.0015142728785888029" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="enterUnitToConverterTextField" destination="9Y6-3E-xTo" id="tJn-RF-AzP"/>
                         <outlet property="resultadoLbl" destination="auT-Kt-cp5" id="Pjw-jg-Ed7"/>
-                        <outlet property="segmentedController1" destination="b1J-Ql-quk" id="7Xb-pd-A1T"/>
-                        <outlet property="segmentedController2" destination="aZH-4c-s50" id="hwz-R4-3Ty"/>
-                        <outlet property="segmentedController3" destination="dUK-oL-pzd" id="h6U-Mi-MJv"/>
+                        <outlet property="segmentedController1" destination="b1J-Ql-quk" id="x6e-Li-POP"/>
+                        <outlet property="segmentedController2" destination="aZH-4c-s50" id="GyZ-ZJ-itX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
