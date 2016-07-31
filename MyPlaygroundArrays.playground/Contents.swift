@@ -195,6 +195,25 @@ print(shopingList)
 shopingList[2...4]
 
 
+shopingList[3...5]
+
+
+//Los arrays estan ordenados, se acceden por el indice
+
+shopingList.count
+shopingList.append("Manzanas")
+shopingList
+shopingList[6...11]
+
+shopingList.index(of: "Huevo")
+shopingList.insert("Huevos", at: 3)
+shopingList[6...12]
+
+
+
+
+
+
 
 
 

@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,24 +17,79 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud_sm" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-Nw-W8f" userLabel="TextContainer">
-                                <frame key="frameInset" minX="57" minY="20" width="300" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qul-b6-iTB">
-                                <frame key="frameInset" minX="57" minY="315" width="300" height="265"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qul-b6-iTB" userLabel="TextContainer">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcelona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVf-5F-k2m">
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xum-p1-jef">
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="90"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iVf-5F-k2m" firstAttribute="top" secondItem="Qul-b6-iTB" secondAttribute="topMargin" constant="16" id="0XR-xJ-dOs"/>
+                                    <constraint firstItem="Xum-p1-jef" firstAttribute="top" secondItem="iVf-5F-k2m" secondAttribute="bottom" constant="16" id="6K4-8V-jr2"/>
+                                    <constraint firstItem="iVf-5F-k2m" firstAttribute="centerX" secondItem="Qul-b6-iTB" secondAttribute="centerX" id="OpO-ih-HgI"/>
+                                    <constraint firstItem="Xum-p1-jef" firstAttribute="top" secondItem="iVf-5F-k2m" secondAttribute="bottom" constant="16" id="dtf-el-LOK"/>
+                                    <constraint firstItem="Xum-p1-jef" firstAttribute="centerX" secondItem="Qul-b6-iTB" secondAttribute="centerX" id="yE4-vI-qcx"/>
+                                </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_sm" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-Nw-W8f"/>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qul-b6-iTB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="40N-Nb-saG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qul-b6-iTB" secondAttribute="trailing" constant="-20" id="8cQ-Zu-t3q"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="9gF-bC-wJW"/>
+                            <constraint firstItem="Qul-b6-iTB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="D5o-Iy-huo"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Ms3-Dp-94H"/>
+                            <constraint firstItem="Qul-b6-iTB" firstAttribute="top" secondItem="uMg-Nw-W8f" secondAttribute="bottom" constant="20" id="OEt-1S-diV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qul-b6-iTB" secondAttribute="bottom" id="WA9-WD-Mdy"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="ZPE-Na-HXm"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="bKZ-le-sb5"/>
+                            <constraint firstItem="Qul-b6-iTB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ga1-QS-8iI"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ia2-vE-TEK"/>
+                            <constraint firstItem="uMg-Nw-W8f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXS-fp-beS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ms3-Dp-94H"/>
+                                <exclude reference="ia2-vE-TEK"/>
+                                <exclude reference="D5o-Iy-huo"/>
+                                <exclude reference="ga1-QS-8iI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="9gF-bC-wJW"/>
+                                <include reference="Ms3-Dp-94H"/>
+                                <exclude reference="ZPE-Na-HXm"/>
+                                <exclude reference="bKZ-le-sb5"/>
+                                <exclude reference="mXS-fp-beS"/>
+                                <exclude reference="40N-Nb-saG"/>
+                                <include reference="D5o-Iy-huo"/>
+                                <exclude reference="OEt-1S-diV"/>
+                                <include reference="ga1-QS-8iI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ia2-vE-TEK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="120.8"/>
         </scene>
     </scenes>
     <resources>
