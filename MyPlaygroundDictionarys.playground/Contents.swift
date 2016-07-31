@@ -158,7 +158,44 @@ if let oldairport = airports.removeValue(forKey: "MAD") {
 
 
 
+/* Ejercicios de métodos con diccionarios
+Sección 12, Clase 127
+Crea un diccionario con clave el nombre de tres personas y valores sus fechas de nacimiento en forma de String.
+Inserta "Juan Gabriel Gomila" : "19-05-1888"
+Modifica de forma segura mi año de nacimiento! Nací en 1988. Imprime la fecha antigua por consola para ello
+Elimíname de tu diccionario de forma segura imprimiendo el año correcto de mi nacimiento.   */
 
+
+var names : [String:String] = ["Juan Manuel":"26-11-1976", "Ismael":"28-06-1989", "Francis":"02-12-2002"]
+
+print(names)
+
+names["Juan Gabriel Gomila"] = "19-05-1888"
+
+print(names)
+
+
+
+
+
+if let oldNames = names.removeValue(forKey: "Juan Gabriel Gomila") {
+
+    print("No es la fecha correcta de Juan Gabriel Gomila \(oldNames)")
+
+
+}
+
+print(names)
+
+
+
+if let oldNames = names.updateValue("19-05-1988", forKey: "Juan Gabriel Gomila" ) {
+    
+    print("La fecha correcta de nacimiento \(oldNames)")
+    
+}
+
+names["Juan Gabriel Gomila"]
 
 
 
