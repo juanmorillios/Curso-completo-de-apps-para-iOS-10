@@ -55,3 +55,94 @@ print(acciones)
 acciones.count
 
 
+var numbers : [Int: String] = [1: "Uno", 2:"Dos", 3:"Tres", 4:"Cuatro"]
+
+numbers[4]
+
+if numbers.isEmpty {
+
+
+    print("El diccionario está vacio")
+
+} else {
+
+
+    print("El diccionario tiene \(numbers.count) elementos")
+    
+    
+
+}
+
+
+var myNumber = numbers[7]
+
+print(numbers)
+
+
+// Optional Binding
+
+if let myNumber = numbers[7] {
+
+
+    print(numbers)
+
+
+} else {
+
+
+    print("El valor no ha podido ser recuperado")
+
+}
+
+
+
+
+
+
+//Ejemplo 2 de Optional Banding
+
+
+if let acciones = acciones["FB"] {
+
+
+    print(acciones)
+
+
+} else {
+
+    print("No corresponde a es valor")
+
+
+}
+
+
+
+// Diccionario vacio, se pueden hacer de diferentes manera y correspondientes escenerios.
+
+// var oldAirports = [String:String]()
+
+var airports = [String:String]()
+
+
+//Luego llenamos el diccionario con los elementos
+airports = ["BCN":"Barcelona", "MAD":"Madrid", "MAL":"Malaga"]
+
+airports
+
+airports["VAL"] = "Valencia"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
