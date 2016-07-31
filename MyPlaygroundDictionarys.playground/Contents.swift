@@ -121,20 +121,39 @@ if let acciones = acciones["FB"] {
 
 // var oldAirports = [String:String]()
 
-var airports = [String:String]()
+var airports : [String:String] = [:]
 
 
 //Luego llenamos el diccionario con los elementos
-airports = ["BCN":"Barcelona", "MAD":"Madrid", "MAL":"Malaga"]
+airports = ["BCN":"Barcelna", "MAD":"Madrid", "MAL":"Malaga"]
 
 airports
 
 airports["VAL"] = "Valencia"
 
 
+if let oldAirports = airports.updateValue("Barcelona", forKey: "BCN") {
+
+
+    print("El aeropuerto antiguo pra la clave BCN era \(oldAirports)")
+
+
+}
+
+
+airports
+airports["BCN"]
+
+
+//Eliminar valores del diccionario
+
+if let oldairport = airports.removeValue(forKey: "MAD") {
+
+    print("Hemos eliminado el areopuerto de \(oldairport)")
 
 
 
+}
 
 
 
