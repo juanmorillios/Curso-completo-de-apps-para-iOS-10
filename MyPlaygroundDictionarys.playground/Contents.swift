@@ -178,7 +178,8 @@ print(names)
 
 
 
-if let oldNames = names.removeValue(forKey: "Juan Gabriel Gomila") {
+if
+ let oldNames = names.removeValue(forKey: "Juan Gabriel Gomila") {
 
     print("No es la fecha correcta de Juan Gabriel Gomila \(oldNames)")
 
@@ -195,7 +196,9 @@ if let oldNames = names.updateValue("19-05-1988", forKey: "Juan Gabriel Gomila" 
     
 }
 
+
 names["Juan Gabriel Gomila"]
+
 
 
 
