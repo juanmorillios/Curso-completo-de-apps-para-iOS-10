@@ -35,10 +35,15 @@ class ViewController: UIViewController {
     @IBAction func converterBtnPressed(_ sender: UIButton) {
         
         let selectdIndex = segmentedControl.selectedSegmentIndex
+        
+        
         let selectdIndex2 = segmentControl2.selectedSegmentIndex
         
         //Creamos una variable para guardar el contenido del textField y al mismo tiempo lo convertimos en tipo de datos Doble.
-        let valueTextField = Double(valueToConverter.text!)!
+        
+        if  let textFieldStr = valueToConverter.text {
+        
+          if  let valueTextField = Double(textFieldStr) {
         
             if selectdIndex == 0 {
         
@@ -58,6 +63,8 @@ class ViewController: UIViewController {
                 let convertedValue = valueTextField * yardUnit
         
                 reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+                
+                lblResultado.text = "Escribe algo"
             
            
             } else if selectdIndex2 == 0 {
@@ -65,6 +72,8 @@ class ViewController: UIViewController {
                 let convertedValue = valueTextField * llegadaUnit
                 
                 reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+                
+
 
         
             } else {
@@ -73,6 +82,9 @@ class ViewController: UIViewController {
                 let convertedValue = valueTextField / llegadaUnit
                 
                 reloadView(valueTextField: valueTextField, convertedValue: convertedValue )
+                
+                }
+        }
         
         }
     }

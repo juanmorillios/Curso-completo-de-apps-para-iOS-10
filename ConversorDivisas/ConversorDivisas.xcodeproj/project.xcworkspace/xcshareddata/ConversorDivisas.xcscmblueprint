@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "52ACA20C0ACA2A19B64AF92E5D6FD838A801BD3E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "52ACA20C0ACA2A19B64AF92E5D6FD838A801BD3E" : 0,
+    "7FB2B67D382EE0E24CE8D964DB9A7699D78BF252" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "02739FF4-8F96-4ED6-86AF-4FB4AD94C8D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "52ACA20C0ACA2A19B64AF92E5D6FD838A801BD3E" : "ConversorDivisas\/",
+    "7FB2B67D382EE0E24CE8D964DB9A7699D78BF252" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ConversorDivisas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ConversorDivisas.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/juanmorillios\/ConversorDivisas.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52ACA20C0ACA2A19B64AF92E5D6FD838A801BD3E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/juanmorillios\/Curso-completo-de-apps-para-iOS-10.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7FB2B67D382EE0E24CE8D964DB9A7699D78BF252"
+    }
+  ]
+}

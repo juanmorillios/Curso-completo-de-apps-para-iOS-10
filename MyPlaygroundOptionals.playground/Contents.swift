@@ -44,22 +44,88 @@ if let str0 = str0 {
 //Declaracion de variables optionales requeridas, el valor de las constantes siempre sera requerido.
 
 
-var str2 : String!
-
-str2 = "Soy una variable requerida"
-
-print(str2)
+//Crea las siguientes variables y constantes como requeridos o opcionales según mejor te parezca
 
 
 
+// let pi : Double = 3.14159265
+
+
+let pi : Double?
+
+pi = 3.14159265
+
+if let pi = pi {
+
+    print(pi)
+
+
+}
 
 
 
+var timeToday : Date?
+
+timeToday
+
+print(timeToday)
 
 
+if let timeToday = timeToday {
 
 
+    print(timeToday)
+
+}
 
 
+var moneyInWallet : Int?
+
+moneyInWallet = 45
+
+if let wallet = moneyInWallet {
+
+
+    print(wallet)
+
+}
+
+
+var numDoorOfMyHouse : Int!
+
+numDoorOfMyHouse = 10
+
+if let door = numDoorOfMyHouse {
+    
+    print(door)
+}
+
+
+let name : String?
+let lastName : String?
+
+name = "Juan"
+
+lastName = "Morillo"
+
+if let name = name, let lastName = lastName {
+
+
+    print("\(name) \(lastName)")
+
+
+}
+
+
+var millionario :Bool?
+
+millionario = true
+
+if millionario == millionario {
+
+
+    print("Juan es un tio millonario")
+
+}
 
 
