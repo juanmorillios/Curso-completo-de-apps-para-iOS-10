@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8738E4A11D4FCFA8000DE7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738E4A01D4FCFA8000DE7FA /* AppDelegate.swift */; };
+		8738E4A31D4FCFA8000DE7FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738E4A21D4FCFA8000DE7FA /* ViewController.swift */; };
+		8738E4A61D4FCFA8000DE7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8738E4A41D4FCFA8000DE7FA /* Main.storyboard */; };
+		8738E4A81D4FCFA8000DE7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8738E4A71D4FCFA8000DE7FA /* Assets.xcassets */; };
+		8738E4AB1D4FCFA8000DE7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8738E4A91D4FCFA8000DE7FA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8738E49D1D4FCFA8000DE7FA /* MZoneWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZoneWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8738E4A01D4FCFA8000DE7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8738E4A21D4FCFA8000DE7FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8738E4A51D4FCFA8000DE7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8738E4A71D4FCFA8000DE7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8738E4AA1D4FCFA8000DE7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8738E4AC1D4FCFA8000DE7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8738E49A1D4FCFA8000DE7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8738E4941D4FCFA8000DE7FA = {
+			isa = PBXGroup;
+			children = (
+				8738E49F1D4FCFA8000DE7FA /* MZoneWear */,
+				8738E49E1D4FCFA8000DE7FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8738E49E1D4FCFA8000DE7FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8738E49D1D4FCFA8000DE7FA /* MZoneWear.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8738E49F1D4FCFA8000DE7FA /* MZoneWear */ = {
+			isa = PBXGroup;
+			children = (
+				8738E4A01D4FCFA8000DE7FA /* AppDelegate.swift */,
+				8738E4A21D4FCFA8000DE7FA /* ViewController.swift */,
+				8738E4A41D4FCFA8000DE7FA /* Main.storyboard */,
+				8738E4A71D4FCFA8000DE7FA /* Assets.xcassets */,
+				8738E4A91D4FCFA8000DE7FA /* LaunchScreen.storyboard */,
+				8738E4AC1D4FCFA8000DE7FA /* Info.plist */,
+			);
+			path = MZoneWear;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8738E49C1D4FCFA8000DE7FA /* MZoneWear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8738E4AF1D4FCFA8000DE7FA /* Build configuration list for PBXNativeTarget "MZoneWear" */;
+			buildPhases = (
+				8738E4991D4FCFA8000DE7FA /* Sources */,
+				8738E49A1D4FCFA8000DE7FA /* Frameworks */,
+				8738E49B1D4FCFA8000DE7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZoneWear;
+			productName = MZoneWear;
+			productReference = 8738E49D1D4FCFA8000DE7FA /* MZoneWear.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8738E4951D4FCFA8000DE7FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JuanMorillios;
+				TargetAttributes = {
+					8738E49C1D4FCFA8000DE7FA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6ZJQ583HU9;
+						DevelopmentTeamName = "Juan Manuel Segura (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8738E4981D4FCFA8000DE7FA /* Build configuration list for PBXProject "MZoneWear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8738E4941D4FCFA8000DE7FA;
+			productRefGroup = 8738E49E1D4FCFA8000DE7FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8738E49C1D4FCFA8000DE7FA /* MZoneWear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8738E49B1D4FCFA8000DE7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8738E4AB1D4FCFA8000DE7FA /* LaunchScreen.storyboard in Resources */,
+				8738E4A81D4FCFA8000DE7FA /* Assets.xcassets in Resources */,
+				8738E4A61D4FCFA8000DE7FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8738E4991D4FCFA8000DE7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8738E4A31D4FCFA8000DE7FA /* ViewController.swift in Sources */,
+				8738E4A11D4FCFA8000DE7FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8738E4A41D4FCFA8000DE7FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8738E4A51D4FCFA8000DE7FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8738E4A91D4FCFA8000DE7FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8738E4AA1D4FCFA8000DE7FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8738E4AD1D4FCFA8000DE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8738E4AE1D4FCFA8000DE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8738E4B01D4FCFA8000DE7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZoneWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkullGames.MZoneWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8738E4B11D4FCFA8000DE7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MZoneWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkullGames.MZoneWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8738E4981D4FCFA8000DE7FA /* Build configuration list for PBXProject "MZoneWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8738E4AD1D4FCFA8000DE7FA /* Debug */,
+				8738E4AE1D4FCFA8000DE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8738E4AF1D4FCFA8000DE7FA /* Build configuration list for PBXNativeTarget "MZoneWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8738E4B01D4FCFA8000DE7FA /* Debug */,
+				8738E4B11D4FCFA8000DE7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8738E4951D4FCFA8000DE7FA /* Project object */;
+}
